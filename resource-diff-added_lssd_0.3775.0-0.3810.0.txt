@@ -1,0 +1,304 @@
+- name: '[Docker] kubernetes/landscape-setup/ingress-default-backend'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/ingress-default-backend:0.16.0
+  src_url: github.wdf.sap.corp/kubernetes/landscape-setup
+  version: 0.16.0
+
+- name: '[Docker] gardener/gardener/admission-controller'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/admission-controller:v1.74.1
+  src_url: github.com/gardener/gardener
+  version: v1.74.1
+
+- name: '[Docker] gardener/gardener/apiserver'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/apiserver:v1.74.1
+  src_url: github.com/gardener/gardener
+  version: v1.74.1
+
+- name: '[Docker] gardener/gardener/controller-manager'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/controller-manager:v1.74.1
+  src_url: github.com/gardener/gardener
+  version: v1.74.1
+
+- name: '[Docker] gardener/gardener/scheduler'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/scheduler:v1.74.1
+  src_url: github.com/gardener/gardener
+  version: v1.74.1
+
+- name: '[Docker] gardener/gardener/operator'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/operator:v1.74.1
+  src_url: github.com/gardener/gardener
+  version: v1.74.1
+
+- name: '[Docker] gardener/gardener/gardenlet'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/gardenlet:v1.74.1
+  src_url: github.com/gardener/gardener
+  version: v1.74.1
+
+- name: '[Docker] gardener/gardener/resource-manager'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/resource-manager:v1.74.1
+  src_url: github.com/gardener/gardener
+  version: v1.74.1
+
+- name: '[Docker] fluent/fluent-operator'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/3rd/kubesphere/fluent-operator:v2.3.0
+  src_url: github.com/fluent/fluent-operator
+  version: v2.3.0
+
+- name: '[Docker] fluent/fluent-bit'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/3rd/kubesphere/fluent-bit:v2.1.4
+  src_url: github.com/fluent/fluent-bit/
+  version: v2.1.4
+
+- name: '[Docker] credativ/vali'
+  pull_cmd: docker pull ghcr.io/credativ/vali:v2.2.6
+  src_url: github.com/credativ/vali
+  version: v2.2.6
+
+- name: '[Docker] credativ/vali/valitail'
+  pull_cmd: docker pull ghcr.io/credativ/valitail:v2.2.6
+  src_url: github.com/credativ/vali
+  version: v2.2.6
+
+- name: '[Docker] gardener/etcd-druid/etcd-druid'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/etcd-druid:v0.18.3
+  src_url: github.com/gardener/etcd-druid
+  version: v0.18.3
+
+- name: '[Docker] gardener/etcd-custom-image/etcd'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/etcd:v3.4.13-bootstrap-11
+  src_url: github.com/gardener/etcd-custom-image
+  version: v3.4.13-bootstrap-11
+
+- name: '[Docker] gardener/logging/fluent-bit-to-vali'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/fluent-bit-to-vali:v0.55.3
+  src_url: github.com/gardener/logging
+  version: v0.55.3
+
+- name: '[Docker] gardener/logging/vali-curator'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/vali-curator:v0.55.3
+  src_url: github.com/gardener/logging
+  version: v0.55.3
+
+- name: '[Docker] gardener/logging/telegraf-iptables'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/telegraf-iptables:v0.55.3
+  src_url: github.com/gardener/logging
+  version: v0.55.3
+
+- name: '[Docker] gardener/logging/event-logger'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/event-logger:v0.55.3
+  src_url: github.com/gardener/logging
+  version: v0.55.3
+
+- name: '[Docker] gardener/logging/tune2fs'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/tune2fs:v0.55.3
+  src_url: github.com/gardener/logging
+  version: v0.55.3
+
+- name: '[Docker] gardener/gardener-extension-shoot-networking-problemdetector/gardener-extension-shoot-networking-problemdetector'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/shoot-networking-problemdetector:v0.17.0
+  src_url: github.com/gardener/gardener-extension-shoot-networking-problemdetector
+  version: v0.17.0
+
+- name: '[Docker] gardener/network-problem-detector/network-problem-detector'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/network-problem-detector:v0.15.0
+  src_url: github.com/gardener/network-problem-detector
+  version: v0.15.0
+
+- name: '[Docker] gardener/gardener-extension-provider-alicloud/gardener-extension-provider-alicloud'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/provider-alicloud:v1.47.1
+  src_url: github.com/gardener/gardener-extension-provider-alicloud
+  version: v1.47.1
+
+- name: '[Docker] gardener/gardener-extension-provider-alicloud/gardener-extension-admission-alicloud'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/admission-alicloud:v1.47.1
+  src_url: github.com/gardener/gardener-extension-provider-alicloud
+  version: v1.47.1
+
+- name: '[Docker] csi-snapshot-validation-webhook'
+  pull_cmd: docker pull registry.k8s.io/sig-storage/snapshot-validation-webhook:v6.1.0
+  src_url: github.com/kubernetes-csi/external-snapshotter
+  version: v6.1.0
+
+- name: '[Docker] csi-plugin-alicloud'
+  pull_cmd: docker pull registry.eu-central-1.aliyuncs.com/acs/csi-plugin:v1.26.1-70dbbcd-aliyun
+  src_url: github.com/kubernetes-sigs/alibaba-cloud-csi-driver
+  version: v1.26.1-70dbbcd-aliyun
+
+- name: '[Docker] gardener/machine-controller-manager-provider-alicloud/machine-controller-manager-provider-alicloud'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/machine-controller-manager-provider-alicloud:v0.9.0
+  src_url: github.com/gardener/machine-controller-manager-provider-alicloud
+  version: v0.9.0
+
+- name: '[Docker] gardener/gardener-extension-provider-aws/gardener-extension-provider-aws'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/provider-aws:v1.45.0
+  src_url: github.com/gardener/gardener-extension-provider-aws
+  version: v1.45.0
+
+- name: '[Docker] gardener/gardener-extension-provider-aws/gardener-extension-admission-aws'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/admission-aws:v1.45.0
+  src_url: github.com/gardener/gardener-extension-provider-aws
+  version: v1.45.0
+
+- name: '[Docker] gardener/cloud-provider-aws/'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/kubernetes/cloud-provider-aws:v1.24.13
+  src_url: github.com/gardener/cloud-provider-aws
+  version: v1.24.13
+
+- name: '[Docker] kubernetes/cloud-provider-aws/cloud-controller-manager'
+  pull_cmd: docker pull registry.k8s.io/provider-aws/cloud-controller-manager:v1.27.1
+  src_url: github.com/kubernetes/cloud-provider-aws
+  version: v1.27.1
+
+- name: '[Docker] gardener/gardener-extension-provider-azure/gardener-extension-provider-azure'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/provider-azure:v1.37.0
+  src_url: github.com/gardener/gardener-extension-provider-azure
+  version: v1.37.0
+
+- name: '[Docker] gardener/gardener-extension-provider-azure/gardener-extension-admission-azure'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/admission-azure:v1.37.0
+  src_url: github.com/gardener/gardener-extension-provider-azure
+  version: v1.37.0
+
+- name: '[Docker] kubernetes/azure-cloud-controller-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-controller-manager:v1.24.21
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.24.21
+  
+- name: '[Docker] kubernetes/azure-cloud-controller-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-controller-manager:v1.25.15
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.25.15
+
+- name: '[Docker] kubernetes/azure-cloud-controller-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-controller-manager:v1.26.11
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.26.11
+
+- name: '[Docker] kubernetes/azure-cloud-controller-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-controller-manager:v1.27.5
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.27.5
+
+- name: '[Docker] kubernetes/azure-cloud-node-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.23.30
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.23.30
+
+- name: '[Docker] kubernetes/azure-cloud-node-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.24.21
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.24.21
+
+- name: '[Docker] kubernetes/azure-cloud-node-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.25.15
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.25.15
+
+- name: '[Docker] kubernetes/azure-cloud-node-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.26.11
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.26.11
+
+- name: '[Docker] kubernetes/azure-cloud-node-manager'
+  pull_cmd: docker pull mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.27.5
+  src_url: github.com/kubernetes-sigs/cloud-provider-azure
+  version: v1.27.5
+
+- name: '[Docker] gardener/gardener-extension-provider-gcp/gardener-extension-provider-gcp'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/provider-gcp:v1.31.0
+  src_url: github.com/gardener/gardener-extension-provider-gcp
+  version: v1.31.0
+
+- name: '[Docker] gardener/gardener-extension-provider-gcp/gardener-extension-admission-gcp'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/admission-gcp:v1.31.0
+  src_url: github.com/gardener/gardener-extension-provider-gcp
+  version: v1.31.0
+
+- name: '[Docker] gardener/cloud-provider-gcp'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/kubernetes/cloud-provider-gcp:v1.27.1
+  src_url: github.com/gardener/cloud-provider-gcp
+  version: v1.27.1
+
+- name: '[Docker] gardener/gardener-extension-provider-vsphere/gardener-extension-provider-vsphere'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/provider-vsphere:v0.29.0
+  src_url: github.com/gardener/gardener-extension-provider-vsphere
+  version: v0.29.0
+
+- name: '[Docker] gardener/gardener-extension-provider-vsphere/gardener-extension-validator-vsphere'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/extensions/validator-vsphere:v0.29.0
+  src_url: github.com/gardener/gardener-extension-provider-vsphere
+  version: v0.29.0
+
+- name: '[Docker] csi-attacher'
+  pull_cmd: docker pull registry.k8s.io/sig-storage/csi-attacher:v4.3.0
+  src_url: github.com/kubernetes-csi/external-attacher
+  version: v4.3.0
+
+- name: '[Docker] csi-resizer'
+  pull_cmd: docker pull registry.k8s.io/sig-storage/csi-resizer:v1.8.0
+  src_url: github.com/kubernetes-csi/external-resizer
+  version: v1.8.0
+
+- name: '[Docker] csi-node-driver-registrar'
+  pull_cmd: docker pull registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.8.0
+  src_url: github.com/kubernetes-csi/node-driver-registrar
+  version: v2.8.0
+
+- name: '[Docker] csi-provisioner'
+  pull_cmd: docker pull registry.k8s.io/sig-storage/csi-provisioner:v3.5.0
+  src_url: github.com/kubernetes-csi/external-provisioner
+  version: v3.5.0
+
+- name: '[Docker] csi-snapshotter'
+  pull_cmd: docker pull registry.k8s.io/sig-storage/csi-snapshotter:v6.2.2
+  src_url: github.com/kubernetes-csi/external-snapshotter
+  version: v6.2.2
+
+- name: '[Docker] csi-snapshot-controller'
+  pull_cmd: docker pull registry.k8s.io/sig-storage/snapshot-controller:v6.2.2
+  src_url: github.com/kubernetes-csi/external-snapshotter
+  version: v6.2.2
+
+- name: '[Docker] csi-snapshot-validation-webhook'
+  pull_cmd: docker pull registry.k8s.io/sig-storage/snapshot-validation-webhook:v6.2.2
+  src_url: github.com/kubernetes-csi/external-snapshotter
+  version: v6.2.2
+
+- name: '[Docker] kubernetes/vsphere-cloud-controller-manager'
+  pull_cmd: docker pull gcr.io/cloud-provider-vsphere/cpi/release/manager:v1.26.1
+  src_url: github.com/kubernetes/cloud-provider-vsphere
+  version: v1.26.1
+
+- name: '[Docker] kubernetes-sigs/vsphere-csi-driver'
+  pull_cmd: docker pull gcr.io/cloud-provider-vsphere/csi/release/driver:v3.0.1
+  src_url: github.com/kubernetes-sigs/vsphere-csi-driver
+  version: v3.0.1
+
+- name: '[Docker] kubernetes-sigs/vsphere-csi-driver/syncer'
+  pull_cmd: docker pull gcr.io/cloud-provider-vsphere/csi/release/syncer:v3.0.1
+  src_url: github.com/kubernetes-sigs/vsphere-csi-driver
+  version: v3.0.1
+
+- name: '[Docker] gardener/machine-controller-manager-provider-vsphere/machine-controller-manager-provider-vsphere'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/machine-controller-manager-provider-vsphere:v0.23.0
+  src_url: github.com/gardener/machine-controller-manager-provider-vsphere
+  version: v0.23.0
+
+- name: '[Docker] gardener/machine-controller-manager/machine-controller-manager'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/gardener/machine-controller-manager:v0.49.0
+  src_url: github.com/gardener/machine-controller-manager
+  version: v0.49.0
+
+- name: '[Docker] gardener/external-dns-management/dns-controller-manager'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/dns-controller-manager:v0.15.6
+  src_url: github.com/gardener/external-dns-management
+  version: v0.15.6
+
+- name: '[Docker] gardener/cc-utils/job-image'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/cc/job-image:1.2108.0
+  src_url: github.com/gardener/cc-utils
+  version: 1.2108.0
+  
+- name: '[Docker] gardener/cc-utils/kaniko-image'
+  pull_cmd: docker pull eu.gcr.io/gardener-project/cc/job-image-kaniko:1.2108.0
+  src_url: github.com/gardener/cc-utils
+  version: 1.2108.0
